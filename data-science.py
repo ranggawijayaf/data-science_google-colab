@@ -14,8 +14,6 @@ warnings.filterwarnings('ignore')
 
 # 1. Menelaah Data
 # Load dataset dan preview awal
-# GANTI PATH INI: Jika file CSV di folder yang sama, gunakan './Campus Recruitment.csv'
-# Jika di folder lain, gunakan path lengkap, e.g., 'C:/Users/YourName/Downloads/Campus Recruitment.csv' (Windows) atau '/home/yourname/Downloads/Campus Recruitment.csv' (Linux/Mac)
 df = pd.read_csv('C:/Users/ACER/Downloads/Campus Recruitment.csv')  # Sesuaikan path di sini!
 print("1. Menelaah Data")
 print("- Dataset Shape:", df.shape)
@@ -219,5 +217,6 @@ plt.figure(figsize=(6,4))
 sns.scatterplot(x='Nilai tes kemampuan kerja', y='Gaji', data=placed_df)
 plt.title('Scatter Plot Tes Kemampuan Kerja vs Gaji (Placed Only)')
 plt.show()
+
 
 print("- Visualisasi Tambahan: Boxplot menunjukkan IPK lebih tinggi untuk Placed; Scatter plot menunjukkan korelasi positif antara tes kemampuan dan gaji.")
